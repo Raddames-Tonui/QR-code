@@ -10,35 +10,39 @@
     font-family: 'Protest Riot', sans-serif;
     
 }
+
 body{
     background-color: hsl(212, 45%, 89%);
     display: grid;
-    justify-content: center;
     min-height: 100vh;
-    align-items: center;
+    line-height: 1.5;
+    padding: 1rem; /* Add around 1rem of padding on the body, so the card doesn't touch the edges on small screens. */
+    place-content: center; /*used in place of justify-content: center; align-items: center;*/
+    text-align: center;
 }
-.container{
+.main{
     background-color: hsl(0, 0%, 100%);
     border-radius: 30px;
     height: 90%;
     margin-top: 40px;
+    max-width: 20rem;
 }
 .qrcode{
     margin: 15px 15px 0 20px;
+    display: block;
+    max-width: 100%;
     width: 250px;
     height: 250px;
     border-radius: 10px;
 }
 h2{
-    text-align: center;
-    font: 20px Outfit, sans-serif;
+    font: 1.3em Outfit, sans-serif; 
     font-weight: 700;
     padding:0 10px ;
     margin: 20px;
 }
 p{
-    text-align: center;
-    font: 15px Outfit, sans-serif; 
+    font: 1rem Outfit, sans-serif; 
     font-weight: 400;
     color: hsl(220, 15%, 55%);
     margin-bottom: 40px;
